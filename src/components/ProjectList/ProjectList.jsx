@@ -9,6 +9,8 @@ function ProjectList({ projects }) {
         return project.name.toLowerCase().includes(searchQuery.toLowerCase());
     });
 
+    const noProjectsFound = filteredProjects.length === 0;
+
   return (
     <div className={styles['App-project-list']}>
         <input 
@@ -18,14 +20,12 @@ function ProjectList({ projects }) {
             onChange={(e) => setSearchQuery(e.target.value)}
         />
       <h2>Project List</h2>
-      {/* Render your project list here */}
-        {filteredProjects.length > 0 ? (
-      filteredProjects.map((project) => (
+
+      {noProjectsFound && <p>No projects match your search.</p>}
+
+      {filteredProjects.map((project) => (
         <ProjectCard key={project.name} project={project} />
-      ))
-    ) : (
-        <p>No projects found.</p>
-      )}
+      ))}
     </div>
   );
 }
