@@ -1,0 +1,12 @@
+.App-header {
+    border: solid 1px white;
+    border-radius: 15px;
+    margin: 4% auto;
+    padding: 20px;
+    width: 92%;
+    min-width: 320px;
+}
+
+.App-title {
+    color: red;
+}
