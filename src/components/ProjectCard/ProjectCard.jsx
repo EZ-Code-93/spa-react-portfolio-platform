@@ -1,5 +1,5 @@
 import styles from './ProjectCard.module.css'
-
+// ProjectCard component to display individual project details
 function ProjectCard({ project }) {
   return (
     <div className={styles['App-project-card']}>

@@ -1,6 +1,9 @@
 .App-header {
-    border: solid 1px white;
+    border: solid 5px #cc00ff;
     border-radius: 15px;
+    box-shadow:
+    inset 0px 0px 30px #cc00ff,
+    0px 0px 10px #cc00ff;
     margin: 4% auto;
     padding: 20px;
     width: 92%;
@@ -8,5 +11,9 @@
 }
 
 .App-title {
-    color: red;
+    color: #33ff00;
+    text-shadow: 0px 0px 5px #33ff00;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
 }

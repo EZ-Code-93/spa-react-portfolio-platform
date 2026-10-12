@@ -1,19 +1,22 @@
 import { useState } from 'react';
 import styles from './Form.module.css'
 
+// Form component to handle adding new projects
 function Form({ onAddProject }) {
+    // State to manage form inputs
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
-
+    // Function to handle form submission
     function handleSubmit(e) {
         e.preventDefault();
-
+        // Create a new project object
         const newProject = {
             name: name,
             description: description
         };
-
+        // Call the onAddProject function passed as a prop to add the new project
         onAddProject(newProject);
+        // Reset form inputs
         setName('');
         setDescription('');
     }

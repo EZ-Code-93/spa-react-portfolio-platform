@@ -5,6 +5,7 @@ import ProjectList from './components/ProjectList/ProjectList'
 import projects from './projects_data'
 
 function App() {
+  // State to manage the list of projects
   const [projectList, setProjectList] = useState(projects);
 
   // Function to add a new project to the list

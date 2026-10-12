@@ -1,5 +1,7 @@
 .App-project-card {
-    border: solid 1px white;
+    border: solid 1px grey;
+    box-shadow:
+      inset 0px 0px 40px grey;
     border-radius: 15px;
     display: flex;
     flex-direction: grid;
@@ -9,4 +11,5 @@
     margin: 4% auto;
     width: 80%;
     min-width: 320px;
+    font-family: "Courier New", Courier, monospace;
 }

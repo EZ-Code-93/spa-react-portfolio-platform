@@ -14,3 +14,38 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+=========================
+  PERSONAL PROJECT APP
+=========================
+Simple personal project app using react and vite. Includes a header, a form for adding
+new projects, and a projects list display with search functionality. each component is
+stored in a folder with its associated css module. All data can be easily re-written to
+include your own projects. all components are easily styled to match whatever style you like.
+Main page styling can be modified in index.css file.
+
+=======================
+    FILE STRUCTURE
+=======================
+Main Parent: 
+- App.jsx
+
+Direct Children:
+- Form.jsx
+- Header.jsx
+- ProjectList.jsx
+
+Child of ProjectList.jsx:
+- ProjectCard.jsx
+
+Initial Data File:
+- projects-data.js
+
+
+========================
+   HOW TO RUN PROJECT
+========================
+1. Fork and Clone repository and open in preferred IDE
+2. Install dependancies: `` npm install
+3. Run environment: `` npm run dev
